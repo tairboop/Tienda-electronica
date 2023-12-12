@@ -11,27 +11,34 @@ import meta from '../logo.svg';
 function Navigationbar() {
   return (
     <div>
-        <Navbar variant='dark' bg='dark' expand="lg" sticky='top'>
+      <Navbar variant='dark' bg='dark' expand="lg" sticky='top'>
         <Container>
-            <Navbar.Brand href="/" style={{ fontFamily:'Oxygen'}}>
+          <Navbar.Brand href="/" style={{ fontFamily: 'Oxygen' }}>
             <img src={meta} width="30" height="30" className="d-inline-block align-top" />
             Inicio</Navbar.Brand>
-            
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse className='icons' style={{justifyContent:'end'}}>
+
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse className='icons' style={{ justifyContent: 'end' }}>
             <Nav className="me-auto">
-            <Nav.Link href="../paginas/carousel">Carousel</Nav.Link>
-            <Nav.Link href="../paginas/card">Card</Nav.Link>
+              <Nav.Link href="../paginas/carousel">Carousel</Nav.Link>
+              <Nav.Link href="../paginas/card">Card</Nav.Link>
+              <Nav.Link href="../paginas/credit">Creditos</Nav.Link>
             </Nav>
-                <Nav style={{gap:'0.5rem', alignItems:'center'}}>
-                    <img src={git} alt='git' ></img>
-                    <img src={twitter} alt='twitter'></img>
-                    <img src={linkedin} alt='linkedin'></img>
-                </Nav>
-            </Navbar.Collapse>
-            
+            <Nav style={{ gap: '0.5rem', alignItems: 'center' }}>
+              <Nav.Link href="https://github.com/tairboop/">
+                <img src={git} alt='git' ></img>
+              </Nav.Link>
+              <Nav.Link href="https://twitter.com/">
+                <img src={twitter} alt='twitter'></img>
+              </Nav.Link>
+              <Nav.Link href="https://bo.linkedin.com/">
+                <img src={linkedin} alt='linkedin'></img>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+
         </Container>
-        </Navbar>
+      </Navbar>
     </div>
   );
 }
