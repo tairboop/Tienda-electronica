@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Nav, NavLink } from "react-bootstrap";
+import { Container, Row, Col, NavLink } from "react-bootstrap";
 import './style-footer.css';
 
 const Footer = () => {
@@ -39,17 +39,17 @@ const Footer = () => {
           <ul>
             <li>
               <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer" >
-                <i class="fab fa-facebook-square"></i>facebook
+                <i className="fab fa-facebook-square"></i>facebook
               </a>
             </li>
             <li>
               <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" >
-                <i class="fab fa-twitter-square"></i>twitter
+                <i className="fab fa-twitter-square"></i>twitter
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/example" target="_blank" rel="noopener noreferrer" >
-                <i class="fab fa-instagram"></i>instagram
+                <i className="fab fa-instagram"></i>instagram
               </a>
             </li>
           </ul>

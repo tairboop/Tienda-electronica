@@ -7,11 +7,15 @@ import CardPage from './paginas/CardPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './paginas/HomePage';
 import Credit from './paginas/Creditos'
+import Carrito from './paginas/cartContent/Carrito';
 import Cabecera from './component/Cabecera';
 import Footer from './component/Footer';
 
+import DataProvider from './paginas/cartContent/DataContext';
+
 function App() {
   return (
+    <DataProvider>
     <BrowserRouter>
     <div className="App">
       <Cabecera/>
@@ -22,11 +26,14 @@ function App() {
         <Route path='/paginas/carousel' element={<CarouselPage/>}></Route>
         <Route path='/paginas/card' element={<CardPage/>}></Route>
         <Route path='/paginas/credit' element={<Credit/>}></Route>
+        <Route path='/paginas/cartContent/carrito' element={<Carrito/>}></Route>
+        
       </Routes>
       <></>
       <Footer/>
     </div>
     </BrowserRouter>
+    </DataProvider>
   );
 }
 

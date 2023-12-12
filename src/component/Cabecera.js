@@ -20,7 +20,7 @@ const Cabecera = () => {
                     <Navbar.Collapse className='icons' style={{ justifyContent: 'end' }}>
                         <Nav style={{ gap: '0.5rem', alignItems: 'center' }}>
                             <Nav.Link href="../paginas/carousel"><Button variant="outline-primary">login</Button>{' '}</Nav.Link>
-                            <Nav.Link href="../paginas/carousel"><Button variant="outline-success">Carrito</Button>{' '}</Nav.Link>
+                            <Nav.Link href="../paginas/cartContent/carrito"><Button variant="outline-success">Carrito</Button>{' '}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
