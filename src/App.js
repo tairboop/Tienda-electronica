@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './paginas/HomePage';
 import Credit from './paginas/Creditos'
 import Cabecera from './component/Cabecera';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path='/paginas/card' element={<CardPage/>}></Route>
         <Route path='/paginas/credit' element={<Credit/>}></Route>
       </Routes>
+      <></>
+      <Footer/>
     </div>
     </BrowserRouter>
   );
