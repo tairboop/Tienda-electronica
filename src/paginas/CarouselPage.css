@@ -3,3 +3,13 @@
     width: 10px;
     height: 10px;
 }
+h3 {
+    color: red;
+    font-weight: bold;
+  }
+p{
+    color: black;
+
+    font-weight: bold;
+}
+  

@@ -1,11 +1,9 @@
-import React from 'react'
+//import React from 'react'
+import CartElement from "./CartElement"
 
 const Carrito = () => {
-  return (
-    <div>
-      hey zzz
-    </div>
+  return (<CartElement/>
   )
-}
+};
 
 export default Carrito

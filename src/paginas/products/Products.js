@@ -1,16 +1,21 @@
 import { useContext } from "react";
 import { dataContext } from "../cartContent/DataContext";
+
 import "./style-products.css";
 
 const Products = () => {
-    const {data} = useContext(dataContext);
-  return data.map((products)=>{
+    const {data, cart, setCart } = useContext(dataContext);
+
+    const buyProducts = (product) =>{
+      setCart([...cart,product]);
+    }
+  return data.map((product)=>{
     return(
-      <div className="card" key={products.id}>
-        <img src={products.img} alt='img-product-card' />
-        <h3>{products.name}</h3>
-        <h4>{products.price}$</h4>
-        <button>comprar</button>
+      <div className="card" key={product.id}>
+        <img src={product.img} alt='img-product-card' />
+        <h3>{product.name}</h3>
+        <h4>{product.price}$</h4>
+        <button onClick={() => buyProducts(product)}>comprar</button>
       </div>
     )
   })
