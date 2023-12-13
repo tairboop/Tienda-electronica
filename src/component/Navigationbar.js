@@ -19,7 +19,7 @@ function Navigationbar() {
           <Navbar.Collapse className='icons' style={{ justifyContent: 'end' }}>
             <Nav className="me-auto">
               <Nav.Link href="../paginas/carousel">Carousel</Nav.Link>
-              <Nav.Link href="../paginas/card">Card</Nav.Link>
+              <Nav.Link href="../paginas/card">Todos los productos</Nav.Link>
               <Nav.Link href="../paginas/credit">Creditos</Nav.Link>
             </Nav>
             <Nav style={{ gap: '0.5rem', alignItems: 'center' }}>

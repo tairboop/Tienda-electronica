@@ -7,7 +7,8 @@ const Products = () => {
     const {data, cart, setCart } = useContext(dataContext);
 
     const buyProducts = (product) =>{
-      setCart([...cart,product]);
+      alert("compraste el producto")
+      //setCart([...cart,product]);
     }
   return data.map((product)=>{
     return(
